@@ -59,7 +59,7 @@
         <a id="logo" href="/">
             <img src="/img/logo.png"/>
             <span id="site-desc">
-                rakugaki
+                Sasayaki
             </span>
         </a>
         <button id="site-nav-switch">
@@ -101,6 +101,15 @@
     <footer id="footer" class="clearfix">
 
     
+        <div class="search">
+            <form name="searchform" id="searchform" class="u-search-form">
+                <input type="text" id="searchinput" class="u-search-input" placeholder="Looking for something?"/>
+                <button type="submit" id="u-search-btn-submit" class="u-search-btn-submit">
+                    <span class="icon icon-search"></span>
+                </button>
+            </form>
+        </div>
+    
 
     <div class="social-wrapper">
         
@@ -115,7 +124,7 @@
                     <span class="icon icon-github"></span>
                 </a>
             
-                <a href="/atom.xml" class="social rss"
+                <a href="https://rakugaki.cn" class="social rss"
                    target="_blank" rel="external">
                     <span class="icon icon-rss"></span>
                 </a>
@@ -181,18 +190,18 @@
             <ul class="clearfix">
                 
                     <li class="left">
-                        <a href="/about"
-                           onfocus="this.blur();"
-                           class="nav-about dark-btn block">
-                            About
-                        </a>
-                    </li>
-                
-                    <li class="right">
                         <a href="/archives"
                            onfocus="this.blur();"
                            class="nav-archives dark-btn block">
                             Archives
+                        </a>
+                    </li>
+                
+                    <li class="right">
+                        <a href="/Link"
+                           onfocus="this.blur();"
+                           class="nav-Link dark-btn block">
+                            Link
                         </a>
                     </li>
                 
@@ -228,13 +237,13 @@
 <script>
   var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
   var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
-  var ALGOLIA_API_KEY = "";
-  var ALGOLIA_APP_ID = "";
-  var ALGOLIA_INDEX_NAME = "";
+  var ALGOLIA_API_KEY = "941fa852cce28ebcde13ecf71d674b06";
+  var ALGOLIA_APP_ID = "UGUCV6SOUK";
+  var ALGOLIA_INDEX_NAME = "hexo";
   var AZURE_SERVICE_NAME = "";
   var AZURE_INDEX_NAME = "";
   var AZURE_QUERY_KEY = "";
-  var SEARCH_SERVICE = "";
+  var SEARCH_SERVICE = "algolia";
   var universalSearchConfig = {};
   if (SEARCH_SERVICE === 'google') {
     universalSearchConfig = {
